@@ -1,0 +1,647 @@
+:root {
+    --white-color: #FFFAFA;
+    --black-color: #292D32;
+    --lightblack-color: #757575;
+    --lighterblack-color: #e4e4e4;
+    --page-color: #EDEDED;
+    --mediumblack-color: #dcdcdc;
+    
+    --gradient-primary: linear-gradient(45deg, #110DD5, #108AEE);
+    --primary-color: #110DD5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--page-color);
+
+}
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100vh;
+}
+
+.sidebar{
+    
+    width: 260px;
+    max-width: 260px;
+    min-width: 260px;
+    flex-basis: 260px;
+    position: fixed;
+    height: 100vh;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px ;
+    background-color: var(--white-color);
+    box-shadow: 2px 2px 5px var(--lighterblack-color);
+
+    
+}
+
+.profile-section{
+   
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--lighterblack-color);
+}
+
+.profile-pic{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.menu-btn{
+    position: absolute;
+    left: 242px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--lighterblack-color);
+    background-color: var(--white-color);
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.menu-btn:hover{
+    background: var(--gradient-primary);
+    color: var(--white-color);
+    cursor: pointer;
+    border: 1px;
+}
+
+.profile-pic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+.profile-details{
+    flex: 1;
+    margin-left: 8px;
+}
+
+.profile-details #profile-name{
+   font-size: 14px;
+   font-weight: 500;
+   margin-bottom: 0px;
+}
+
+.profile-details #profile-company{
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--lightblack-color);
+    text-transform: uppercase;
+}
+
+
+
+
+/*DASHBOARD SECTION*/
+
+.dashboard-section{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.dashboard-cell{
+    padding: 14px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+
+}
+
+.dashboard-section a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+
+.dashboard-cell:hover {
+    background: var(--gradient-primary);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: larger;
+}
+
+.dashboard-cell.active{
+    background: var(--gradient-primary);
+    color: var(--white-color);
+}
+
+
+
+.dashboard-section .dashboard-cell > *{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.dashboard-cell .caret{
+    font-size: smaller;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-section .text{
+    font-size: 14px;
+    margin-left: 12px;
+    flex: 1;
+}
+
+
+
+.dashboard-submenu{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+    
+    gap: 14px;
+    margin-left: 20px;
+    border-left: 2px solid var(--lighterblack-color);
+}
+
+.dashboard-submenu .submenu-cell > *{
+    padding: 14px;
+    border-radius: 14px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+
+    max-height: 40px;
+}
+
+.submenu-cell .submenu-text{
+    font-size: 12px;
+    margin-left: 12px;
+    flex: 1;
+}
+
+
+.submenu-cell:hover > * {
+    background: var(--gradient-primary);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SETTINGS SECTION*/
+
+.settings-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding-top: 8px;
+    border-top: 1px solid var(--lighterblack-color);
+}
+
+.settings-section .dashboard-cell > *{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.settings-section .text{
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------- MAIN SECTION --------------*/
+
+.main-page{
+    flex: 1;
+    margin-left: 260px;
+    padding: 40px 80px ;
+}
+
+
+.main-page .profile-header{
+    width: 100%;
+    max-height: 120px;
+    min-height: 120px;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: hidden;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+
+.profile-header .profile-picture-frame{
+    flex: 1;
+    width: 100%;
+    
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    background: var(--gradient-primary);
+    
+    border-radius: 20px;
+    overflow: hidden;
+    
+    object-fit: fill;
+
+    border: 1px solid var(--mediumblack-color);
+
+
+}
+
+
+
+
+.profile-header .profile-picture-frame img{
+    
+    width: 100%;
+    height: 100%;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+
+.profile-header .profile-info{
+    flex: 4;
+    width: 100%;
+    max-height: 120px;
+    min-height: 120px;
+    background: var(--gradient-primary);
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+
+
+.profile-info .profile-name{
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+
+.profile-info .profile-company{
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: -4px;
+}
+
+.profile-header .profile-picture-frame:hover img{
+    transform: scale(1.3);
+}
+
+
+
+/*-------------- FORM STATUS --------------*/
+
+.main-page .form-status-section{
+    width: 100%;
+    max-height: 250px;
+    min-height: 200px;
+
+    margin-top: 30px;
+    
+    background-color: var(--white-color);
+    border: 1px solid var(--mediumblack-color);
+
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    
+    box-shadow: 2px 2px 5px var(--lighterblack-color);
+    padding: 60px 30px;
+}
+
+.form-status-section .form-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    
+}
+
+.form-status-section .form-title p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-status-section .form-icons-section{
+    
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    
+}
+
+.form-status-section .form-icons-section > .form-icon{
+    background-color: var(--lighterblack-color);
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 2px solid --lightblack-color;
+    transition: all 0.3s;
+
+    
+    
+    
+}
+
+.form-status-section .form-icons-section > .icon-line{
+    
+
+    width: 180px;
+    height: 1px;
+    margin: 0px 16px;
+    border-bottom: 1px dashed var(--lightblack-color);
+    border-image: repeating-linear-gradient(to right, var(--lightblack-color) 0, var(--lightblack-color) 5px, transparent 5px, transparent 10px) 1;
+
+    
+}
+
+.form-status-section .form-icons-section .form-icon > i{
+    font-size: 24px;
+    
+}
+
+.form-status-section .form-icons-section .form-icon.submitted {
+    background: var(--gradient-primary);
+}
+
+.form-status-section .form-icons-section .form-icon.submitted > p,
+.form-status-section .form-icons-section .form-icon.submitted > i {
+    color: var(--white-color);
+}
+
+.form-status-section .form-icons-section .form-icon > p{
+    font-size: 10px;
+    margin-top: 4px;
+    
+}
+
+.form-status-section .form-icons-section .form-icon:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+
+.section-divider{
+    width: 90%;
+    height: 1px;
+    margin: 20px 30px;
+    border-bottom: 1px solid var(--lightblack-color);
+
+}
+
+.form-name{
+    
+    display: flex;
+    flex-direction: row;
+    
+    gap: 130px;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-name .form-name-text p{
+    width: 150px;
+    
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*-------------- FORM STATUS --------------*/
+
+
+
+.student-details-section{
+    width: 100%;
+
+    max-height: 550px;
+    min-height: 550px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    gap:30px;
+    
+    
+    
+}
+
+.personal-details{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    min-height: 550px;
+    margin-bottom: 60px;
+
+    background-color: var(--white-color);
+    border: 1px solid var(--mediumblack-color);
+
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    
+    box-shadow: 2px 2px 5px var(--lighterblack-color);
+    padding: 20px 30px;
+    gap: 8px;
+}
+
+.intership-details{
+    flex: 1;
+    width: 100%;
+    height: 100%;    
+    max-height: 550px;
+    min-height: 550px;
+    margin-bottom: 60px;
+
+    
+    background-color: var(--white-color);
+    border: 1px solid var(--mediumblack-color);
+
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    
+    box-shadow: 2px 2px 5px var(--lighterblack-color);
+    padding: 30px;
+
+    gap: 8px;
+    
+}
+
+.student-details-section .detail-header{
+    font-size: 16px;
+    font-weight: 600;
+
+    
+    margin: 20px;
+}
+
+.detail-cell{
+    width: 100%;
+    border-radius: 12px;
+    border-top: 1px solid var(--lighterblack-color);
+    border-bottom: 1px solid var(--lighterblack-color);
+    
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px 20px;
+    max-height: 60px;
+    min-height: 60px;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    overflow: hidden;
+
+    transition: all 0.5s;
+
+}
+
+
+.detail-cell > *{
+    font-size: 12px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.detail-cell:hover{
+    transform: scale(1.04);
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+

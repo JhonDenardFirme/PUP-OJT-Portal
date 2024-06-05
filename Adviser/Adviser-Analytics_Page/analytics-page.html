@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="analytics-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+
+<body>
+    
+<div class="page-container">
+  
+    <div class="sidebar">
+
+        <div class="profile-section">
+            <div class="profile-pic">
+                <img src="../../../Images/profile.jpg">
+            </div>
+            <div class="profile-details">
+                <p id="profile-name">Jhon Denard Firme</p>
+                <p id="profile-company">Unilab Pharmaceuticals</p>
+            </div>
+
+            <div class="menu-btn">
+                <i class="ph-bold ph-caret-left"></i>
+            </div>
+        </div>
+
+
+        <div class="dashboard-section" >
+
+            <a href="../Adviser-Dashboard_Page/dashboard-page.html">
+                <div class="dashboard-cell">
+                    <div class="dashboard">
+                        <i class="ph-bold ph-house-simple"></i>
+                        <p class="text">Dashboard</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../Adviser-Student_Page/student-page.html">
+            <div class="dashboard-cell">
+                <div class="student">
+                    <i class="ph-bold ph-user"></i>
+                    <p class="text">Student</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="dashboard-cell active">
+                <div class="analytics">
+                    <i class="ph-bold ph-chart-bar"></i>
+                    <p class="text">Analytics</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="analytics-page.html">
+                <div class="dashboard-cell">
+                    <div class="forms">
+                        <i class="ph-bold ph-file-text"></i>
+                        <p class="text">Evaluation Forms</p>
+                        <i class="caret ph ph-caret-down"></i>
+                    </div>
+                </div>
+            </a>
+
+            
+            <div class="dashboard-submenu">
+                    <a href="../Adviser-Evaluation_Page/evaluationform1-page.html">
+                        <div class="submenu-cell">
+                            <div class="form-1">
+                                <i class="ph-bold ph-file-text"></i>
+                                <p class="text">Form 1</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="../Adviser-Evaluation_Page/evaluationform2-page.html">
+                        <div class="submenu-cell">
+                            <div class="form-1">
+                                <i class="ph-bold ph-file-text"></i>
+                                <p class="text">Form 2</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="../Adviser-Evaluation_Page/evaluationform3-page.html">
+                        <div class="submenu-cell">
+                            <div class="form-1">
+                                <i class="ph-bold ph-file-text"></i>
+                                <p class="text">Form 3</p>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            
+
+            
+
+
+            
+
+
+
+        </div>
+
+
+        <div class="settings-section">
+            
+            <a href="#">
+                <div class="dashboard-cell">
+                    <div class="settings">
+                        <i class="ph-bold ph-gear-six"></i>
+                        <p class="text">Settings</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="main-page">
+        <div class="header-info">
+            <p class="class-section">BS Chemistry 2-3</p>
+            <p class="class-department">Department of Physical Sciences</p>
+        </div>
+
+
+
+        
+        <div class="header-widgets">
+
+            <div class="widget-cell">
+                <div class="widget-top">
+                    <i class="ph ph-user-circle-check"></i>
+                    <p class="widget-title">Form 1 Submissions</p>
+                </div>
+            
+                <div class="widget-bottom">
+                    <p class="widget-data">12 | 32</p>
+                </div>
+
+                <i class="ph ph-qr-code"></i>
+            </div>
+
+            <div class="widget-cell">
+                <div class="widget-top">
+                    <i class="ph ph-user-circle-check"></i>
+                    <p class="widget-title">Form 2 Submissions</p>
+                </div>
+            
+                <div class="widget-bottom">
+                    <p class="widget-data">12 | 32</p>
+                </div>
+
+                <i class="ph ph-user-circle-plus"></i>
+            </div>
+
+            <div class="widget-cell">
+                <div class="widget-top">
+                    <i class="ph ph-user-circle-check"></i>
+                    <p class="widget-title">Form 3 Submissions</p>
+                </div>
+            
+                <div class="widget-bottom">
+                    <p class="widget-data">12 | 32</p>
+                </div>
+
+                <i class="ph ph-user-circle-plus"></i>
+            </div>
+
+        </div>
+
+
+    <!-- FORM 1 TABLE  START-->
+
+
+    <div class="records-table">
+
+        <div class="table-title">
+            <p class="table-title-main">Form 1 | Status Overview</p>
+            <p class="table-title-desc">Intern to Supervisor Evaluation</p>
+        </div>
+
+        
+        
+        <div class="table-container">
+
+            <!-- SUBMITTED -->
+            <div class="records-column">
+                <div class="records-table-header">
+                    <div class="record-profile">
+                        Submitted
+                    </div>
+
+                    <div class="record-link">
+                        Link
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- Divider -->
+            <div class="divider">
+
+            </div>
+
+
+            <!-- PENDING -->
+            <div class="records-column">
+                <div class="records-table-header">
+                    <div class="record-profile">
+                        Pending
+                    </div>
+
+                    <div class="record-link">
+                        Link
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+    <!-- FORM 1 TABLE  END-->
+    
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FORM 1 TABLE  START-->
+
+
+               
+        <div class="records-table">
+
+            <div class="table-title">
+                <p class="table-title-main">Form 2 | Status Overview</p>
+                <p class="table-title-desc">Supervisor to Intern Evaluation</p>
+            </div>
+    
+            
+            
+            <div class="table-container">
+    
+                <!-- SUBMITTED -->
+                <div class="records-column">
+                    <div class="records-table-header">
+                        <div class="record-profile">
+                            Submitted
+                        </div>
+    
+                        <div class="record-link">
+                            Link
+                        </div>
+    
+                    </div>
+    
+    
+    
+    
+    
+    
+                    <div class="record-cell">
+                        <div class="record-profile">
+                            <div class="record-pic">
+                                <img src="../../Images/profile.jpg"></i>
+                            </div>
+                            <div class="record-name">
+                                <p class="record-text">Jhon Denard Firme</p>
+                            </div>
+                        </div>
+    
+                        <div class="record-link active">
+                            <i class="ph ph-arrow-square-right"></i>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="record-cell">
+                        <div class="record-profile">
+                            <div class="record-pic">
+                                <img src="../../Images/profile.jpg"></i>
+                            </div>
+                            <div class="record-name">
+                                <p class="record-text">Jhon Denard Firme</p>
+                            </div>
+                        </div>
+    
+                        <div class="record-link active">
+                            <i class="ph ph-arrow-square-right"></i>
+                        </div>
+                    </div>
+    
+                    <div class="record-cell">
+                        <div class="record-profile">
+                            <div class="record-pic">
+                                <img src="../../Images/profile.jpg"></i>
+                            </div>
+                            <div class="record-name">
+                                <p class="record-text">Jhon Denard Firme</p>
+                            </div>
+                        </div>
+    
+                        <div class="record-link active">
+                            <i class="ph ph-arrow-square-right"></i>
+                        </div>
+                    </div>
+    
+                    <div class="record-cell">
+                        <div class="record-profile">
+                            <div class="record-pic">
+                                <img src="../../Images/profile.jpg"></i>
+                            </div>
+                            <div class="record-name">
+                                <p class="record-text">Jhon Denard Firme</p>
+                            </div>
+                        </div>
+    
+                        <div class="record-link active">
+                            <i class="ph ph-arrow-square-right"></i>
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+    
+    
+    
+                <!-- Divider -->
+                <div class="divider">
+    
+                </div>
+    
+    
+                <!-- PENDING -->
+                <div class="records-column">
+                    <div class="records-table-header">
+                        <div class="record-profile">
+                            Pending
+                        </div>
+    
+                        <div class="record-link">
+                            Link
+                        </div>
+    
+                    </div>
+    
+    
+    
+    
+    
+    
+                    <div class="record-cell">
+                        <div class="record-profile">
+                            <div class="record-pic">
+                                <img src="../../Images/profile.jpg"></i>
+                            </div>
+                            <div class="record-name">
+                                <p class="record-text">Jhon Denard Firme</p>
+                            </div>
+                        </div>
+    
+                        <div class="record-link">
+                            <i class="ph ph-arrow-square-right"></i>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="record-cell">
+                        <div class="record-profile">
+                            <div class="record-pic">
+                                <img src="../../Images/profile.jpg"></i>
+                            </div>
+                            <div class="record-name">
+                                <p class="record-text">Jhon Denard Firme</p>
+                            </div>
+                        </div>
+    
+                        <div class="record-link">
+                            <i class="ph ph-arrow-square-right"></i>
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+    
+    
+    
+    
+    
+    
+            </div>
+    
+    
+    
+        </div>
+        <!-- FORM 1 TABLE  END-->
+
+
+
+
+
+
+
+
+
+
+            <!-- FORM 3 TABLE  START-->
+
+
+               
+    <div class="records-table last">
+
+        <div class="table-title">
+            <p class="table-title-main">Form 3 | Status Overview</p>
+            <p class="table-title-desc">Adviser to Company Evaluation</p>
+        </div>
+
+        
+        
+        <div class="table-container">
+
+            <!-- SUBMITTED -->
+            <div class="records-column">
+                <div class="records-table-header">
+                    <div class="record-profile">
+                        Submitted
+                    </div>
+
+                    <div class="record-link">
+                        Link
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link active">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- Divider -->
+            <div class="divider">
+
+            </div>
+
+
+            <!-- PENDING -->
+            <div class="records-column">
+                <div class="records-table-header">
+                    <div class="record-profile">
+                        Pending
+                    </div>
+
+                    <div class="record-link">
+                        Link
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="record-cell">
+                    <div class="record-profile">
+                        <div class="record-pic">
+                            <img src="../../Images/profile.jpg"></i>
+                        </div>
+                        <div class="record-name">
+                            <p class="record-text">Jhon Denard Firme</p>
+                        </div>
+                    </div>
+
+                    <div class="record-link">
+                        <i class="ph ph-arrow-square-right"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+    <!-- FORM 3 TABLE  END-->
+
+
+
+
+
+
+
+</div>  
+
+
+</body>
+</html>

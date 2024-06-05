@@ -568,3 +568,9 @@ body{
     border-right: 1px solid var(--lighterblack-color);
 }
 
+
+
+
+.bottom-spacer{
+    height: 1px;
+}

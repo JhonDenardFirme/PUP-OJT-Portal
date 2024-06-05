@@ -255,8 +255,9 @@ body{
 .main-page{
     flex: 1;
     margin-left: 260px;
-    padding: 40px 80px 60px;
-    height: auto;
+    padding: 40px 80px; /* Existing padding */
+    padding-bottom: 60px; /* Added bottom padding */
+    
 }
 
 
@@ -308,7 +309,13 @@ body{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.records-student > *{
+    text-decoration: none;
+    color: var(--black-color);
 }
 
 .table-title{
@@ -331,7 +338,7 @@ body{
     font-weight: 300;
 }
 
-.records-table .record-cell{
+.record-cell{
     
     width: 100%;
     border-radius: 12px;
@@ -345,23 +352,16 @@ body{
     max-height: 60px;
     min-height: 60px;
     
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     overflow: hidden;
 
-    transition: all 0.5s;
-}
-
-
-.record-cell .record-checkbox{
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    transition: all 0.3s;
 }
 
 
 
-.record-cell .record-profile .record-pic{
+.record-pic{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,7 +369,7 @@ body{
 }
 
 
-.record-cell .record-profile .record-pic img{
+.record-pic img{
 
     width: 34px;
     height: 34px;
@@ -381,7 +381,7 @@ body{
 }
 
 
-.record-cell .record-text{
+.record-text{
     font-size: 14px;
     font-weight: 400;
 
@@ -390,7 +390,7 @@ body{
 
 .record-profile{
     
-    flex: 2.5;
+    flex: 1.8;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -398,7 +398,7 @@ body{
 
 .record-company{
     
-    flex: 2;
+    flex: 1.5;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -406,37 +406,46 @@ body{
 
 .record-email{
     
-    flex: 2;
+    flex: 1.5;
     display: flex;
     align-items: center;
     overflow: hidden;
 }
 
-.record-checkbox{
-    
+.record-contact{
     
     flex: 1;
     display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.record-settings{
     
+    flex: 0.5;
+    display: flex;
     align-items: center;
     justify-content: space-around;
-
+    overflow: hidden;
+    margin-right: -20px;
 }
 
 
+.record-settings button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid var(--lighterblack-color);
+    background-color: var(--lighterblack-color);
+    
+}
 
-
-.record-checkbox i{
+.record-settings button i{
     font-size: 18px;
-}
-
-.record-checkbox-1 i{
-    color: rgb(197, 7, 7);
-}
-
-.record-checkbox-2 i,
-.record-checkbox-3 i{
-    color: green;
 }
 
 
@@ -449,7 +458,7 @@ body{
     display: flex;
     flex-direction: row;
     
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     
     overflow: hidden;
@@ -478,3 +487,13 @@ body{
 }
 
 
+
+
+
+
+
+
+
+.bottom-spacer{
+    height: 1px;
+}

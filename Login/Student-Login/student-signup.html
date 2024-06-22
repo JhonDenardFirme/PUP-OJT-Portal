@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvalRate</title>
+    <link rel="stylesheet" href="student-signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+
+<body>
+    
+    <div class="page-container">
+
+        <!-- ------------------------ PHOTO COLUMN ------------------------ -->
+
+        <div class="page-photo">
+
+            <div class="photo-container">
+                <div class="website-title">
+                    <div class="logo">
+
+                    </div>
+                    <div class="title">
+                        EVALRATE
+                    </div>
+                    <div class="subtitle">
+                        POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - OJT EVALUATION PORTAL
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ------------------------ SIGNUP COLUMN ------------------------ -->
+
+        <div class="page-details">
+
+            <div class="container">
+
+                <div class="header">
+
+                    <h2>
+                        Sign-Up
+                    </h2>
+                </div>
+
+                <div class="progress-header">
+
+
+                    <div class="progress-circle">
+                        <div class="circle p1 active">
+                            <i class="ph ph-user-gear"></i>
+                        </div>
+
+
+                        <div class="divider"></div>
+
+
+                        <div class="circle p2">
+                            <i class="ph ph-user-check"></i>
+                        </div>
+
+
+
+                        <div class="divider"></div>
+
+                        <div class="circle p3">
+                            <i class="ph ph-briefcase"></i>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="progress-text">
+
+                        <div class="circle-text">
+                            Account Details
+                        </div>
+
+                        <div class="circle-text">
+                            Personal Details
+                        </div>
+
+                        <div class="circle-text">
+                            Internship Details
+                        </div>                       
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <div class="forms">
+                    <form class="form-main" action="" method="POST">
+                        <div class="stage p1 active">
+                            <div class="input-cell">
+                                <label for="email" class="label-text">Email</label>
+                                <input type="text" id="email" class="input-field" placeholder="you@email.com" required>
+                            </div>
+                            <div class="input-cell">
+                                <label for="password" class="label-text">Password</label>
+                                <input type="password" id="password" class="input-field" placeholder="********" required>
+                            </div>
+                            <div class="input-cell">
+                                <label for="confirm-password" class="label-text">Confirm Password</label>
+                                <input type="password" id="confirm-password" class="input-field" placeholder="********" required>
+                            </div>
+                            <div class="bottom-panel">
+                                <input type="button" class="button" id="stage1Next" value="Next">
+                                <a href="#">Already have an account?</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="stage p2">
+                            <div class="input-cell">
+                                <label for="firstname" class="label-text">First Name</label>
+                                <input type="text" id="firstname" class="input-field" placeholder="Juan" required>
+                            </div>
+                            <div class="input-cell">
+                                <label for="middlename" class="label-text">Middle Name</label>
+                                <input type="text" id="middlename" class="input-field" placeholder="Reyes">
+                            </div>
+                            <div class="input-cell">
+                                <label for="surname" class="label-text">Surname</label>
+                                <input type="text" id="surname" class="input-field" placeholder="Dela Cruz" required>
+                            </div>
+
+                            <div class="input-cell">
+                                <label for="studentid" class="label-text">PUP Student ID</label>
+                                <input type="text" id="studentid" class="input-field" placeholder="20XX-00000-MN-0" required pattern="\d{4}-\d{5}-[M-N]{2}-\d">
+                            </div>
+
+
+                            <div class="input-cell">
+                                <label for="contact" class="label-text">Contact Number</label>
+                                <input type="text" id="contact" class="input-field" placeholder="09XXXXXXXXX" required pattern="09\d{9}">
+                            </div>
+                            <div class="bottom-panel">
+                                <div class="navigation">
+                                    <input type="button" class="button previous" id="stage2Previous" value="Previous">
+                                    <input type="button" class="button next" id="stage2Next" value="Next">
+                                </div>
+                                <a href="#">Already have an account?</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="stage p3">
+                            <div class="input-cell">
+                                <label for="company" class="label-text">Company</label>
+                                <input type="text" id="company" class="input-field" placeholder="HTE Company" required>
+                            </div>
+                            <div class="input-cell">
+                                <label for="supervisor" class="label-text">Supervisor</label>
+                                <input type="text" id="supervisor" class="input-field" placeholder="Supervisor">
+                            </div>
+
+                            <div class="bottom-panel">
+                                <div class="navigation">
+                                    <input type="button" class="button previous" id="stage3Previous" value="Previous">
+                                    <input type="submit" class="button submit" value="Submit">
+                                </div>
+                                <a href="#">Already have an account?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+
+
+            </div>
+            
+        </div>
+
+        
+
+
+    </div>
+
+    <script src="student-signup.js"></script>
+
+</body>
+
+
+</html>

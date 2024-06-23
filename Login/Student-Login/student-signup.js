@@ -24,7 +24,7 @@ var stage1Icon = document.querySelector(".circle.p1");
 var stage2Icon = document.querySelector(".circle.p2");
 var stage3Icon = document.querySelector(".circle.p3");
 
-// Event listener for Next button in Stage 1
+
 stage1Next.addEventListener('click', function() {
     if (!validateStage1()) {
         return;
@@ -34,14 +34,14 @@ stage1Next.addEventListener('click', function() {
     stage2Icon.classList.add("active");
 });
 
-// Event listener for moving back from Stage 2 to Stage 1
+
 stage2Previous.addEventListener('click', function() {
     transitionStages(stage2_Form, stage1_Form, "animate-Right", "animate-Left");
     stage2Icon.classList.remove("active");
     stage1Icon.classList.add("active");
 });
 
-// Event listener for moving from Stage 2 to Stage 3
+
 stage2Next.addEventListener('click', function() {
     if (!validateStage2()) {
         return;
@@ -51,21 +51,21 @@ stage2Next.addEventListener('click', function() {
     stage3Icon.classList.add("active");
 });
 
-// Event listener for moving back from Stage 3 to Stage 2
+
 stage3Previous.addEventListener('click', function() {
     transitionStages(stage3_Form, stage2_Form, "animate-Right", "animate-Left");
     stage3Icon.classList.remove("active");
     stage2Icon.classList.add("active");
 });
 
-// Event listener for form submission
+
 document.querySelector(".form-main").addEventListener("submit", function(event) {
     if (!validateForm()) {
         event.preventDefault();
         alert("Please accomplish the form correctly.");
     } else {
         alert("Form submitted successfully!");
-        // Optionally, redirect to a success page or perform other actions
+        
     }
 });
 
@@ -82,7 +82,10 @@ function transitionStages(hideStage, showStage, hideAnimation, showAnimation) {
     });
 }
 
-// Function to validate Stage 1 inputs
+
+
+
+// Stage 1 Validation
 function validateStage1() {
     const password = document.getElementById('password').value.trim();
     const confirmPassword = document.getElementById('confirm-password').value.trim();
@@ -100,19 +103,19 @@ function validateStage1() {
     return true;
 }
 
-// Function to validate Stage 2 inputs
+// Stage 2 Validation
 function validateStage2() {
     const studentId = document.getElementById('studentid').value.trim();
     const contact = document.getElementById('contact').value.trim();
 
-    // Validate PUP Student ID format
+    
     const studentIdPattern = /^\d{4}-\d{5}-[M-N]{2}-\d$/;
     if (!studentIdPattern.test(studentId)) {
         alert('Invalid PUP Student ID format. Please enter in the format 20XX-00000-MN-0');
         return false;
     }
 
-    // Validate Contact Number format
+    
     const contactPattern = /^09\d{9}$/;
     if (!contactPattern.test(contact)) {
         alert('Invalid Contact Number format. Please enter in the format 09XXXXXXXXX');
@@ -122,7 +125,7 @@ function validateStage2() {
     return true;
 }
 
-// Function to validate entire form before submission
+// Overall Validation
 function validateForm() {
     if (!validateStage1()) {
         return false;
@@ -152,13 +155,25 @@ function validateForm() {
 
 
 
+
+
+
+
+
+
+
+
+
+// Dropdown Logic
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const departmentSelect = document.getElementById('department');
     const courseSelect = document.getElementById('course');
     const sectionSelect = document.getElementById('section');
 
     const departmentOptions = [
-        { value: '', text: 'Select Department' }, // Blank default option
+        { value: '', text: 'Select Department' }, 
         { value: 'Biology', text: 'Biology' },
         { value: 'Food Technology', text: 'Food Technology' },
         { value: 'Mathematics & Statistics', text: 'Mathematics & Statistics' },
@@ -186,7 +201,11 @@ document.addEventListener('DOMContentLoaded', function () {
         ]
     };
 
-    // Function to populate options for the courses based on selected department
+    
+
+
+
+    
     function populateCourseOptions(departmentSelectValue) {
         courseSelect.innerHTML = '<option value="">Select Course</option>';
         sectionSelect.innerHTML = '<option value="">Select Section</option>';
@@ -200,12 +219,17 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
-        // Trigger section population for the default selected course
+        
         const defaultCourseValue = courseSelect.value;
         populateSectionOptions(defaultCourseValue, departmentSelectValue);
     }
 
-    // Function to populate options for the sections based on selected course and department
+
+
+
+
+
+    
     function populateSectionOptions(courseSelectValue, departmentSelectValue) {
         sectionSelect.innerHTML = '<option value="">Select Section</option>';
 
@@ -220,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Populate department options on page load
+    
     departmentOptions.forEach(optionData => {
         const option = document.createElement('option');
         option.value = optionData.value;
@@ -228,14 +252,18 @@ document.addEventListener('DOMContentLoaded', function () {
         departmentSelect.appendChild(option);
     });
 
-    // Event listener for department select field
+
+
+
+
+    
     departmentSelect.addEventListener('click', function () {
-        // Check if the options have already been populated
+        
         if (departmentSelect.children.length === 1 && departmentSelect.children[0].value === '') {
-            // Remove the initial blank option
+            
             departmentSelect.removeChild(departmentSelect.children[0]);
 
-            // Populate department options if not already populated
+            
             departmentOptions.forEach(optionData => {
                 const option = document.createElement('option');
                 option.value = optionData.value;
@@ -256,6 +284,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Initial population when the DOM content is loaded
-    populateCourseOptions(departmentSelect.value); // Populate courses based on default department
+    populateCourseOptions(departmentSelect.value); 
 });
 

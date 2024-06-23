@@ -28,13 +28,13 @@ body{
 
 .page-container{
 
-    background-image: url('../Images/background.jpg');
-    background-size: cover; /* Make the background image cover the entire page */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: center; /* Center the background image */
+    background-image: url('./Images/background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     height: 100vh;
 
-    padding-top: 150px;
+    padding-top: 200px;
     padding-bottom: 150px;
 }
 
@@ -53,6 +53,8 @@ body{
 }
 
 .subtitle{
+    position: relative;
+    top: -32px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -66,7 +68,7 @@ body{
     align-items: center;
     justify-content: center;
     
-    margin-top: 100px;
+    margin-top: 200px;
 
     gap: 50px;
 
@@ -105,4 +107,84 @@ button:active{
 
 
 
+
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px); 
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px); 
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideDown {
+    0% {
+        
+        opacity: 0;
+    }
+
+
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+
+.animate-Up {
+    animation: slideUp 1s ease 1s 1 forwards normal;
+    opacity: 0;
+}
+
+.animate-Down {
+    animation: slideDown 1s ease 2s 1 forwards normal;
+    opacity: 0;
+}
+
+
+
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-Left {
+    animation: slideLeft 0.5s ease forwards;
+    
+}
+
+.animate-Right {
+    animation: slideRight 0.5s ease forwards;
+    
+}
 
